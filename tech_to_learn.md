@@ -43,6 +43,10 @@ tmux new -s bob  # name is at the bottom left of the session window
 tmux kill-session  # kills most recent session
 tmux kill-session -t <session index/name>
 ```
+- To kill all sessions at once
+```bash
+tmux kill-server
+```
 
 ---
 
@@ -100,6 +104,13 @@ tmux kill-session -t <session index/name>
 >> ctrl + B
 >> ctrl / alt (hold)    # which ever size of adjustment
 >> <arrow keys>
+```
+
+---
+
+Tmux Cheat Sheet / Quick Ref link [Link](https://tmuxcheatsheet.com/)
+
+---
 
 ## Pet Projects
 1. [Spec Kit by Github](https://www.youtube.com/watch?v=em3vIT9aUsg): for Sprec Driven Development (SDD) of AI coding. The Tool focus only one one spec file and builds the application from there, using the specifications files as the single source of truth.
