@@ -1,17 +1,11 @@
-# Technologies to Learn
-
-## Development
-
-## Deployment (CICD)
-
-### 1. [Tmux Terminal multiplexer](https://www.youtube.com/watch?v=nTqu6w2wc68)
+1. [Tmux Terminal multiplexer](https://www.youtube.com/watch?v=nTqu6w2wc68)
 - [Tmux Wiki](https://github.com/tmux/tmux/wiki/Getting-Started)
+- Tmux Cheat Sheet / Quick Ref: [Link](https://tmuxcheatsheet.com/)
 - it is kind of terminal virtualization
 - Tmux has 3 layers:
     1. Session (name on the bottom left)
     2. Window (the thing after the session name, also has the terminal we're using [default is bash])
     3. Panes (when we split the window)
-
 
 #### Commands
 ##### Session Commands
@@ -107,29 +101,5 @@ tmux kill-server
 ```
 
 ---
-
-Tmux Cheat Sheet / Quick Ref link [Link](https://tmuxcheatsheet.com/)
-
 ---
-
-### 2. [Docker Compose](https://www.youtube.com/watch?v=DM65_JyGxCo)
-
-
 ---
-
-### 3. Kubernettes (Very Advanced, avoid for first/second deployments)
-
----
-
-## Pet Projects
-1. [Spec Kit by Github](https://www.youtube.com/watch?v=em3vIT9aUsg): for Sprec Driven Development (SDD) of AI coding. The Tool focus only one one spec file and builds the application from there, using the specifications files as the single source of truth.
-
-2. Making own Home/Office-Lab AI servers: Try following this networkChuck [video](https://www.youtube.com/watch?v=Wjrdr0NU4Sk)
-
----
-
-## Things to install in work PC
-
-1. Raycast
-2. HomeBrew package manager
-3.
