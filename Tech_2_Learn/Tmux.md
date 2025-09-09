@@ -1,4 +1,5 @@
-1. [Tmux Terminal multiplexer](https://www.youtube.com/watch?v=nTqu6w2wc68)
+# Tmux: Terminal multiplexer
+- Introduction [Video]((https://www.youtube.com/watch?v=nTqu6w2wc68))
 - [Tmux Wiki](https://github.com/tmux/tmux/wiki/Getting-Started)
 - Tmux Cheat Sheet / Quick Ref: [Link](https://tmuxcheatsheet.com/)
 - it is kind of terminal virtualization
