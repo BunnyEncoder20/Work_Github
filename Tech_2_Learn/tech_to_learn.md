@@ -20,6 +20,7 @@ Which ever we choose to go forward with:
 1. Tmux (Temrinal Multiplexer)
 2. Docker (Containerization tool)
 2. Docker Compose (First step towards docker deployments)
+3. Nginx
 3. Kubernettes (K3s / K8s)
 
 ---
