@@ -17,27 +17,22 @@ Which ever we choose to go forward with:
 
 ## Deployment (CICD)
 
-1. Tmux (Temrinal Multiplexer)
+1. Tmux (Temrinal Multiplexer) ✅
 2. Docker (Containerization tool)
 2. Docker Compose (First step towards docker deployments)
-3. Nginx
+3. Nginx (Server Software)
 3. Kubernettes (K3s / K8s)
 
----
+## AI
 
-
-
----
-
-### 3. Kubernettes (Very Advanced, avoid for first/second deployments)
+1. Learn about the basics of AI (LLMs, Models, Traning, Deploying, etc)
+2. Learn how make a local, private AI Server: [video](https://www.youtube.com/watch?v=Wjrdr0NU4Sk)
 
 ---
 
 ## Pet Projects
 1. [Spec Kit by Github](https://www.youtube.com/watch?v=em3vIT9aUsg): for Sprec Driven Development (SDD) of AI coding. The Tool focus only one one spec file and builds the application from there, using the specifications files as the single source of truth.
 
-2. Making own Home/Office-Lab AI servers: Try following this networkChuck [video](https://www.youtube.com/watch?v=Wjrdr0NU4Sk)
-
-3. [SuperFile](https://github.com/yorukot/superfile): Temrinal Manager
+3. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
 
 ---
