@@ -12,8 +12,8 @@
 ## Development
 
 Which ever we choose to go forward with:
-1. FastAPI integration with React frontend
-2. Node.js backend Structuring
+    1. FastAPI integration with React frontend
+    2. Node.js backend Structuring
 
 ## Deployment (CICD)
 
@@ -33,6 +33,8 @@ Which ever we choose to go forward with:
 ## Pet Projects
 1. [Spec Kit by Github](https://www.youtube.com/watch?v=em3vIT9aUsg): for Sprec Driven Development (SDD) of AI coding. The Tool focus only one one spec file and builds the application from there, using the specifications files as the single source of truth.
 
-3. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
+2. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
+
+3. [Fabric AI Tool](https://www.youtube.com/watch?v=UbDyjIIGaxQ): Reduce the friction between humans and AI
 
 ---
