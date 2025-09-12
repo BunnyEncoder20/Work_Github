@@ -84,3 +84,31 @@ server {
 - This one:
     - First server block redirects all incoming HTTP traffic to HTTPS
     - Second server block servers the files over HTTPS with secure SSL/TLS configured.
+- We can even add configuration for load balancing
+```bash
+http
+{
+    upstream myappl {
+        server srv1.example.com;
+        server srv2.example.com;
+        server srv3.example.com;
+    }
+
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://myappl;
+        }
+    }
+}
+```
+- In the above example there will be 3 instances of the same server running through srv1-srv3.
+- We can further configure which load balancing algorithm to be used as (defaults to round robin):
+```bash
+upstream myappl {
+    Least_conn;     # load balancing algo
+    server srvl.example.com;
+    server srv2.example.com;
+    server srv3.example.com;
+}
+```
