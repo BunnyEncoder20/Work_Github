@@ -32,3 +32,55 @@ Not only that, we can take additional security methods with the proxy server:
 - Nginx can handle **SSL/TLS** encryption and decryption. Even if aatacker, intercepts the message/packets, he cannot read it.
 - The proxy server doesn't itself decryption the message, it passes it to the server where it is finally decrypted (remember that the proxy servers are usually exposed to the internet)
 - The Proxy server can also be configured to accept only encrypted messages (**Enforce HTTPS**) and deny any non-encrypted requests.
+
+---
+
+## Nginx Configuration
+- a main config file is typically named nginx.config and located in the "./etc/nginx/" dir
+- uses it's own syntax in form of `Directives` and `Blocks`
+- this is also where u can config your server's default behaviour. (Either a web or proxy server)
+- A very basic server config for nginx would look like this:
+```bash
+server {
+    listen 80;
+    server_name example.com www.example.com;
+    location / {
+        root /var/www/example.com;
+        index index.html index.htm;
+    }
+}
+```
+- This one:
+    - example of web server setup which servers the web pages from itself
+    - `location`directives defines how the server should handle the incoming req and specify where the resources are located. Either this this machine or another server machine.
+- **NOTE:** That communicating on the HTTP port is insecure and we should always redirect the incoming traffic to encrypted comm lines.
+- A more proper example would be:
+```bash
+server {
+    listen 80 ;
+    server_name example.com www.example.com;
+
+    # Redirect all HTTP requests to HTTPS
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name example.com www.example.com;
+
+    # SSL Configuration
+    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+
+    # Security Headers
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    #...
+
+    location / {
+    root /var/www/example.com;
+    index index.html index.htm;
+}
+```
+- This one:
+    - First server block redirects all incoming HTTP traffic to HTTPS
+    - Second server block servers the files over HTTPS with secure SSL/TLS configured.
