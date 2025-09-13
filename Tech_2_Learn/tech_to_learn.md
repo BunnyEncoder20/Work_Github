@@ -17,10 +17,10 @@ Which ever we choose to go forward with:
 
 ## Deployment (CICD)
 
-1. Tmux (Temrinal Multiplexer) ✅
-2. Docker (Containerization tool)
+1. Tmux (Temrinal Multiplexer) ✅✅
+2. Docker (Containerization tool) ✅
 2. Docker Compose (First step towards docker deployments)
-3. Nginx (Server Software)
+3. Nginx (Server Software) ✅
 3. Kubernettes (K3s / K8s)
 
 ## AI
