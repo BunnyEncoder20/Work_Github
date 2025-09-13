@@ -38,6 +38,9 @@ Not only that, we can take additional security methods with the proxy server:
 ## Nginx Configuration
 - a main config file is typically named nginx.config and located in the "./etc/nginx/" dir
 - uses it's own syntax in form of `Directives` and `Blocks`
+- The configuration is:
+    - straightforward
+    - granular
 - this is also where u can config your server's default behaviour. (Either a web or proxy server)
 - A very basic server config for nginx would look like this:
 ```bash
@@ -84,6 +87,8 @@ server {
 - This one:
     - First server block redirects all incoming HTTP traffic to HTTPS
     - Second server block servers the files over HTTPS with secure SSL/TLS configured.
+
+### Load Balancer Config
 - We can even add configuration for load balancing
 ```bash
 http
@@ -112,3 +117,52 @@ upstream myappl {
     server srv3.example.com;
 }
 ```
+
+### Caching Config
+- We can also configure the caching of the server with great detail as follows:
+```bash
+http {
+    #...
+    proxy_cache_path /data/nginx/cache keys_zone=mycache: 10m;
+}
+```
+
+- Then include the proxy_cache directive in the context (protocol type, virtual server, or location) for which you want to cache server responses, specifying the zone name defined by the keys_zone parameter to the proxy_cache_path directive (in this case, mycache):
+```bash
+http {
+    # ...
+    proxy_cache_path /data/nginx/cache keys_zone=mycache: 10m;
+    server {
+        proxy_cache mycache;
+        location / {
+            proxy_pass http://localhost:8000;
+        }
+    }
+}
+```
+
+---
+
+# Nginx in Kubernettes
+
+- Cause Nginx is so popular and useful, it is the ingress controller (specialized proxy server / load balancer for managing ingress (incoming) req in kubernettes)
+- It handles the routing to the appropriate services based on rules defined in the Ingress resource.
+![nginx as ingress controller for k8s](./assests/nginx_03.png)
+- It actually lives inside the cluster so it cannot be accessed from outside
+- It is usually a cloud Load Balanceer which is exposed to the public
+- For the security of the cluster, it's parts (nginx ingress controller here) should never be accessible to the public directly
+- It is only used after the Cloud load balancer directs traffic to it. It ingress controller will then intelligently (sending reqs to specified microservices) route the traffic to the appropriate services based on the defined rules.
+
+---
+
+# Alternatives
+
+- Apache Server is also basically the same server software, which has been around for longer.
+- It's advntages:
+    - Highly customizable and extensible
+    - good choice for dynamic content handling and legacy support
+- Even though Apache Server dominated before Nginx (2004), Nginx quickly took over because:
+    - it was faster and more lightweight
+    - better suited for high performace envs and static content
+    - Simplier configuration AND
+    - Much more widely popular in the container world.
