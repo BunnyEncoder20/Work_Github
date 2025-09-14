@@ -28,6 +28,7 @@ Which ever we choose to go forward with:
 1. Learn about the basics of AI (LLMs, Models, Traning, Deploying, etc)
 2. Learn how make a local, private AI Server: [video](https://www.youtube.com/watch?v=Wjrdr0NU4Sk)
 3. Learn how to run local LLM models: [video](https://www.youtube.com/watch?v=7TR-FLWNVHY)
+4. LangChain (Maybe usful for LLM training)
 
 ---
 
