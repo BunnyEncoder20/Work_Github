@@ -8,6 +8,7 @@
 4. Warp terminal
 5. Tmux
 6. Docker
+7. Your Fav Piracy [Website](https://fmhy.net/beginners-guide#movies-shows)
 
 ## Development
 
