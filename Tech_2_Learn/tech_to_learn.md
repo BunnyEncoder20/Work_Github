@@ -41,4 +41,6 @@ Which ever we choose to go forward with:
 
 3. [Fabric AI Tool](https://www.youtube.com/watch?v=UbDyjIIGaxQ): Reduce the friction between humans and AI
 
+4. How to AI skill Developer: [video](https://www.youtube.com/watch?v=eqrq5pTqFgc)
+
 ---
