@@ -9,6 +9,7 @@
 5. Tmux
 6. Docker
 7. Your Fav Piracy [Website](https://fmhy.net/beginners-guide#movies-shows)
+8. Obsidian MD
 
 ## Development
 
