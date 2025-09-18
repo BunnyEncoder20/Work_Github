@@ -24,9 +24,7 @@ Which ever we choose to go forward with:
 2. Docker Compose (First step towards docker deployments)
 3. Nginx (Server Software) ✅
 3. Kubernettes (K3s / K8s)
-4. Gitlab CICD 
-1. Taiga.io (Open Src Project management tool)
-2. Integrating Taiga and GitLab (for assigning work)
+4. Gitlab CICD (gonna use this for Assignments only)
 
 ## AI
 
