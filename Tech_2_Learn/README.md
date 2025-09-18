@@ -43,7 +43,7 @@ Which ever we choose to go forward with:
 2. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
 3. [Fabric AI Tool](https://www.youtube.com/watch?v=UbDyjIIGaxQ): Reduce the friction between humans and AI
 4. How to AI skill Developer: [video](https://www.youtube.com/watch?v=eqrq5pTqFgc)
-5. How ro install Linux PopOS on Work PC
+5. How ro install Linux PopOS on Work PC: [video](https://www.youtube.com/watch?v=_Ua-d9OeUOg)
 6. Obsidian Setup: [video](https://www.youtube.com/watch?v=3ccktMJ1YHI)
 7. 
 
