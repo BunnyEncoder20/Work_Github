@@ -11,5 +11,9 @@
 
 **[18/09/25 15:11] varun@devops** Deployed the Taiga instance and Gitlab isntance on self-hosted server
 
-**[18/09/25 16:30] varun@AI** n8n ?
-
+**[18/09/25 16:30] varun@AI** reinstalled PostgreSQL
+to reset default creds
+```bash
+username: postgres
+password: postgres
+```
