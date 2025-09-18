@@ -18,11 +18,15 @@ Which ever we choose to go forward with:
 
 ## Deployment (CICD)
 
+
 1. Tmux (Temrinal Multiplexer) ✅✅
 2. Docker (Containerization tool) ✅
 2. Docker Compose (First step towards docker deployments)
 3. Nginx (Server Software) ✅
 3. Kubernettes (K3s / K8s)
+4. Gitlab CICD 
+1. Taiga.io (Open Src Project management tool)
+2. Integrating Taiga and GitLab (for assigning work)
 
 ## AI
 
