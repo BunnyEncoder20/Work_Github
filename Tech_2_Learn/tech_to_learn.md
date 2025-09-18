@@ -13,8 +13,8 @@
 ## Development
 
 Which ever we choose to go forward with:
-    1. FastAPI integration with React frontend
-    2. Node.js backend Structuring
+1. FastAPI integration with React frontend
+2. Node.js backend Structuring
 
 ## Deployment (CICD)
 
