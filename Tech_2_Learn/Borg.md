@@ -98,3 +98,6 @@ You can actually **combine** them:
 ---
 
 Would you like me to sketch out a **sample architecture diagram** of how Borg + MinIO + offline storage could work in your on-prem setup? That might make it clearer.
+
+
+Following this [video](https://www.youtube.com/watch?v=asZX2YbTaNE) series to go from desktop client to self hosting borg backups server
