@@ -21,12 +21,12 @@ Which ever we choose to go forward with:
 ## Deployment (CICD)
 
 
-1. Tmux (Temrinal Multiplexer) ✅✅
-2. Docker (Containerization tool) ✅
-2. Docker Compose (First step towards docker deployments)
-3. Nginx (Server Software) ✅
-3. Kubernettes (K3s / K8s)
-4. Gitlab CICD (gonna use this for Assignments only)
+1. [[Tmux]] (Temrinal Multiplexer) ✅✅
+2. [[Docker]] (Containerization tool) ✅
+3. [[Docker_Compose]] (First step towards docker deployments)
+4. [[Nginx]] (Server Software) ✅
+5. Kubernettes (K3s / K8s)
+6. Gitlab CICD (gonna use this for Assignments only)
 
 ## AI
 
@@ -35,16 +35,16 @@ Which ever we choose to go forward with:
 3. Learn how to run local LLM models: [video](https://www.youtube.com/watch?v=7TR-FLWNVHY)
 4. n8n automation
 5. MCP: Model Context Protocol: [video](https://www.youtube.com/watch?v=GuTcle5edjk)
+6. Vivian Sir's Content Automation: [[vivian_sirs_PROD_RAG_system]]
 
 ---
 
 ## Pet Projects
-1. [Spec Kit by Github](https://www.youtube.com/watch?v=em3vIT9aUsg): for Sprec Driven Development (SDD) of AI coding. The Tool focus only one one spec file and builds the application from there, using the specifications files as the single source of truth.
-2. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
-3. [Fabric AI Tool](https://www.youtube.com/watch?v=UbDyjIIGaxQ): Reduce the friction between humans and AI
-4. How to AI skill Developer: [video](https://www.youtube.com/watch?v=eqrq5pTqFgc)
-5. How ro install Linux PopOS on Work PC: [video](https://www.youtube.com/watch?v=_Ua-d9OeUOg)
-6. Obsidian Setup: [video](https://www.youtube.com/watch?v=3ccktMJ1YHI)
-7. 
+1. [SuperFile](https://github.com/yorukot/superfile): Temrinal File Manager
+2. [Fabric AI Tool](https://www.youtube.com/watch?v=UbDyjIIGaxQ): [[Fabric]] Reduce the friction between humans and AI
+3. How to AI skill Developer: [video](https://www.youtube.com/watch?v=eqrq5pTqFgc)
+4. How to install Linux PopOS on Work PC: [video](https://www.youtube.com/watch?v=_Ua-d9OeUOg)
+5. Obsidian Setup: [video](https://www.youtube.com/watch?v=3ccktMJ1YHI)
+6. 
 
 ---

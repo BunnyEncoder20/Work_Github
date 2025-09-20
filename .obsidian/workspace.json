@@ -180,17 +180,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1b7340fb8bd58547",
+  "active": "75d7338de294ff9d",
   "lastOpenFiles": [
-    "Tech_2_Learn/Backups.md",
+    "Tech_2_Learn/Kopia.md",
+    "README.md",
+    "Kopia.md",
     "worklog/worklog.md",
-    "~.bashrc",
     "Tech_2_Learn/README.md",
+    "Tech_2_Learn/Nginx.md",
+    "Tech_2_Learn/Backups.md",
+    "Nginx.md",
+    "Tech_2_Learn/Docker.md",
+    "Tech_2_Learn/Tmux.md",
+    "~.bashrc",
     "Tech_2_Learn/vivian_sirs_PROD_RAG_system.md",
     "Tech_2_Learn/Taiga.md",
-    "Tech_2_Learn/Ngnix.md",
     "Tech_2_Learn/Fabric.md",
-    "Tech_2_Learn/Docker_Compose.md",
-    "Tech_2_Learn/Docker.md"
+    "Tech_2_Learn/Docker_Compose.md"
   ]
 }

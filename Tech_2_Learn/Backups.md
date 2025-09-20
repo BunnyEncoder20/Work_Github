@@ -25,4 +25,4 @@
 | **Ease of use**          | CLI + GUI. The GUI makes setup and monitoring simpler, especially if multiple Windows users are involved. | CLI only (unless you buy the GUI). CLI is fine, but less friendly for non-technical staff.                                            |
 | **Community & activity** | Actively developed, modern design, growing adoption.                                                      | Mature, stable, but smaller community. Development not as fast.                                                                       |
 
-> After careful analysis, I have finally chosen to move forward with Kopia.
+After careful analysis, I have finally chosen to move forward with [[Kopia]].

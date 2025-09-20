@@ -1,4 +1,3 @@
-# Work Logs
 
 ## Description
 - This file cointains all works I have contributed in my tenture at L&T
@@ -21,4 +20,6 @@ password: postgres
 
 **[19/09/25 15:45] varun@backend >>** Implemented Elastic Search features: fuzzy, Boolean, phrase and keyword. Rewrote entire Elastic Searching controller
 
-**[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully used Kopia backup to remote NAS 
+**[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully made snapshots and scheduled backups to remote NAS 
+
+**[20/09/25 15:15] varun@Infra >>** Successfully installed Kopia Server CLI for centralized backups on LAN server (GPU) PC
