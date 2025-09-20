@@ -258,11 +258,10 @@ On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI
 
 ---
 
-If you want, I can now:
+We can now:
 
 - Generate the exact **NSSM arguments** and a ready-to-paste script for installing Kopia as a Windows service under NSSM (I’ll include handling of config-file and logs), **or**
     
 - Produce a one-page **deployment checklist** and a small PowerShell script to pre-create the Kopia users and push a small client config (useful for mass roll-out).
     
 
-Which of these do you want next?

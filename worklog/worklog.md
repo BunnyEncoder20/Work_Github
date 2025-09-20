@@ -22,4 +22,4 @@ password: postgres
 
 **[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully made snapshots and scheduled backups to remote NAS 
 
-**[20/09/25 15:15] varun@Infra >>** Successfully installed Kopia Server CLI for centralized backups on LAN server (GPU) PC
+**[20/09/25 15:15] varun@Infra >>** Successfully installed Kopia Server CLI for centralized backups on LAN server (GPU) PC and created backup repo
