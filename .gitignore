@@ -1,2 +1,5 @@
 .DS_Store
 .obsidian
+~.bashrc
+.obsidian/community-plugins.json
+.obsidian/workspace.json
