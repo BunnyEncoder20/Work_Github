@@ -16,9 +16,9 @@ username: postgres
 password: postgres
 ```
 
-**[19/09/25 14:30] varun@backend >>** Fixed indexing and English analyzer of `ietm` data 
+**[19/09/25 14:30] varun@backend >>** IETM: Fixed indexing and English analyzer (tokenization algorithm) of `ietm` data 
 
-**[19/09/25 15:45] varun@backend >>** Implemented Elastic Search features: fuzzy, Boolean, phrase and keyword. Rewrote entire Elastic Searching controller
+**[19/09/25 15:45] varun@backend >>** IETM: Implemented Elastic Search features: fuzzy, Boolean, phrase and keyword. Rewrote entire Elastic Searching controller
 
 **[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully made snapshots and scheduled backups to remote NAS 
 

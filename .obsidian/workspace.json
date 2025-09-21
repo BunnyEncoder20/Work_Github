@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tech_2_Learn/Kopia.md",
+                "file": "worklog/worklog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kopia"
+              "title": "worklog"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tech_2_Learn/Kopia.md",
+                "file": "worklog/worklog.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Kopia"
+              "title": "Outline of worklog"
             }
           },
           {
@@ -182,8 +182,8 @@
   },
   "active": "1b7340fb8bd58547",
   "lastOpenFiles": [
-    "worklog/worklog.md",
     "Tech_2_Learn/Kopia.md",
+    "worklog/worklog.md",
     "Tech_2_Learn/Backups.md",
     "README.md",
     "Kopia.md",
