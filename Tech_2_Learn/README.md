@@ -22,14 +22,11 @@ Your [FOSS Website](https://alternativeoss.com/)
 2. [[Docker]] (Containerization tool) ✅
 3. [[Docker_Compose]] (First step towards docker deployments)
 4. [[Nginx]] (Server Software) ✅
-<<<<<<< Updated upstream
 5. Kubernettes (K3s / K8s)
 6. Gitlab CICD (gonna use this for Assignments only)
 7. [[Kopia]] Centralized backups
-=======
-5. [[Kubernettes]] (K3s / K8s)
-6. [[Gitlab]] CICD (gonna use this for Assignments only)
->>>>>>> Stashed changes
+8. [[Kubernettes]] (K3s / K8s)
+9. [[Gitlab]] CICD (gonna use this for Assignments only)
 
 ## AI
 
