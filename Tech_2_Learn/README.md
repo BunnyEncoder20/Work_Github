@@ -27,6 +27,7 @@ Which ever we choose to go forward with:
 4. [[Nginx]] (Server Software) ✅
 5. Kubernettes (K3s / K8s)
 6. Gitlab CICD (gonna use this for Assignments only)
+7. [[Kopia]] Centralized backups
 
 ## AI
 
