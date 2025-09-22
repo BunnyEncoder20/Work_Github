@@ -1,6 +1,6 @@
 
 ## Description
-- This file cointains all works I have contributed in my tenture at L&T
+- This file contains all works I have contributed in my job at L&T
 
 ## Format
 [date time] name@dept >> Title - work done
@@ -12,6 +12,7 @@
 
 **[18/09/25 16:30] varun@backend >>** reinstalled PostgreSQL to reset default creds. Started work on `ietm-ts-search`.
 ```bash
+# postgres password set temp
 username: postgres
 password: postgres
 ```
@@ -20,6 +21,8 @@ password: postgres
 
 **[19/09/25 15:45] varun@backend >>** IETM: Implemented Elastic Search features: fuzzy, Boolean, phrase and keyword. Rewrote entire Elastic Searching controller
 
-**[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully made snapshots and scheduled backups to remote NAS 
+**[20/09/25 09:40] varun@Infra >>** Researched Backup solutions and installed and successfully made snapshots and scheduled backups to remote NAS using [[Kopia]]
 
-**[20/09/25 15:15] varun@Infra >>** Successfully installed Kopia Server CLI for centralized backups on LAN server (GPU) PC and created backup repo
+**[20/09/25 15:15] varun@Infra >>** Successfully installed [[Kopia]] Server CLI for centralized backups on LAN server (GPU) PC and created backup repo
+
+**[22/09/25 17:05] varun@Infra >>** configured [[Kopia]] Server Service on Server  and took backups 2 computers to centralized server. [[Kopia]] backups POC completed

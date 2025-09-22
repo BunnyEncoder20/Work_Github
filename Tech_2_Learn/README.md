@@ -1,33 +1,35 @@
 # Technologies to Learn
 
+Your Fav [Piracy Website](https://fmhy.net/beginners-guide#movies-shows)
+Your [FOSS Website](https://alternativeoss.com/)
 ## Things to install in work PC
-
-1. Raycast
-2. HomeBrew package manager
-3. Zed Editor
-4. Warp terminal
-5. Tmux
-6. Docker
-7. Your Fav Piracy [Website](https://fmhy.net/beginners-guide#movies-shows)
-8. Obsidian
-9. PopOS
+1. HomeBrew package manager
+2. Zed Editor
+3. Warp terminal
+4. [[Tmux]]
+5. [[Docker]]
+6. Obsidian
+7. PopOS
 
 ## Development
 
-Which ever we choose to go forward with:
-1. FastAPI integration with React frontend
-2. Node.js backend Structuring
+1. [[Nest.js]]
+2. [[SupaBase]]
 
 ## Deployment (CICD)
-
 
 1. [[Tmux]] (Temrinal Multiplexer) ✅✅
 2. [[Docker]] (Containerization tool) ✅
 3. [[Docker_Compose]] (First step towards docker deployments)
 4. [[Nginx]] (Server Software) ✅
+<<<<<<< Updated upstream
 5. Kubernettes (K3s / K8s)
 6. Gitlab CICD (gonna use this for Assignments only)
 7. [[Kopia]] Centralized backups
+=======
+5. [[Kubernettes]] (K3s / K8s)
+6. [[Gitlab]] CICD (gonna use this for Assignments only)
+>>>>>>> Stashed changes
 
 ## AI
 
