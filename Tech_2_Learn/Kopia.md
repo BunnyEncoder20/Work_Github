@@ -1,5 +1,6 @@
-Nice — below is a **detailed, copy-pasteable step-by-step guide** to turn your central PC into a Kopia **Repository Server** on Windows, and to connect Windows / Linux clients. I include exact commands, recommended best practices (TLS, firewall, running as a service), and the client steps you’ll need. I’ll also note the common gotchas.
-
+Below is a **detailed, step-by-step guide** to turn your central PC into a Kopia **Repository Server** on Windows, and to connect Windows / Linux clients. 
+I include exact commands, recommended best practices (TLS, running as a service), and the client steps you’ll need. 
+I’ll also note the common gotchas.
 I’m citing Kopia docs and community guidance for the important commands and flags. ([kopia.io](https://kopia.io/docs/installation/?utm_source=chatgpt.com "Download & Installation"))
 
 ---
@@ -23,7 +24,7 @@ I’m citing Kopia docs and community guidance for the important commands and fl
 
 ---
 
-# A — Prereqs & decisions
+## A — Prereqs & decisions
 
 - Central PC: Windows 10/11 or Windows Server with a large data disk (e.g., `D:\KopiaRepo`) reserved for backups.
     
@@ -36,7 +37,7 @@ I’m citing Kopia docs and community guidance for the important commands and fl
 
 ---
 
-# B — Install Kopia CLI on the central PC
+## B — Install Kopia CLI on the central PC
 
 1. Download the **Kopia CLI** binary for Windows from Kopia releases / installation page (do **not** use KopiaUI installer on the server — use the CLI binary). Example page: Kopia installation page / releases. ([kopia.io](https://kopia.io/docs/installation/?utm_source=chatgpt.com "Download & Installation"))
     
@@ -45,7 +46,7 @@ I’m citing Kopia docs and community guidance for the important commands and fl
 
 ---
 
-# C — Create the repository (filesystem backend)
+## C — Create the repository (filesystem backend)
 
 Run this **from the account that will own the Kopia config** (see notes about config-file below):
 
@@ -69,7 +70,7 @@ cd "C:\Program Files\Kopia"
 
 ---
 
-# D — Add server users (allow clients to connect)
+## D — Add server users (allow clients to connect)
 
 On the server (same account/context that owns the repository config):
 
@@ -84,7 +85,7 @@ On the server (same account/context that owns the repository config):
 
 ---
 
-# E — Start the Kopia server (first run: generate TLS cert)
+## E — Start the Kopia server (first run: generate TLS cert)
 
 **First run**: generate a self-signed TLS cert and start the server (server prints the certificate fingerprint you’ll use from clients).
 
@@ -117,7 +118,7 @@ Notes:
 
 ---
 
-# F — Make the server process persistent (recommended: NSSM)
+## F — Make the server process persistent (recommended: NSSM)
 
 `kopia server start` runs in the foreground. To run Kopia as a Windows service you can use **NSSM** (Non-Sucking Service Manager) which wraps any executable as a service.
 
@@ -147,7 +148,7 @@ Alternative: use a Scheduled Task that runs at system startup with highest privi
 
 ---
 
-# G — Open firewall port on server
+## G — Open firewall port on server
 
 Allow inbound TCP 51515 (or whatever port you used). Example PowerShell:
 
@@ -159,13 +160,13 @@ Also make sure any network routers, VLANs, or endpoint firewalls allow the traff
 
 ---
 
-# H — Capture the server certificate fingerprint
+## H — Capture the server certificate fingerprint
 
 When the server first starts with `--tls-generate-cert`, it prints a `SERVER CERT SHA256: <FINGERPRINT>`. Save that string. If you missed it, you can export the certificate file and compute the SHA256 fingerprint, or re-run generation on a test VM — community threads show this is how clients identify the server. ([kopia.io](https://kopia.io/docs/repository-server/?utm_source=chatgpt.com "Repository Server"))
 
 ---
 
-# I — Connect a client (KopiaUI) to the server
+## I — Connect a client (KopiaUI) to the server
 
 On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI.
 
@@ -193,7 +194,7 @@ On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI
 
 ---
 
-# J — Scheduling snapshots on clients
+## J — Scheduling snapshots on clients
 
 - KopiaUI has built-in scheduling (you said you already used scheduling with shared folder mode). In server mode, scheduling is still done per-client (Kopia creates snapshots on the client).
     
@@ -209,7 +210,7 @@ On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI
 
 ---
 
-# K — Useful commands to check server & users (run on server)
+## K — Useful commands to check server & users (run on server)
 
 ```powershell
 # list users
@@ -226,7 +227,7 @@ On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI
 
 ---
 
-# L — Common gotchas & troubleshooting
+## L — Common gotchas & troubleshooting
 
 - **Remember the fingerprint**: If you miss the fingerprint at first cert generation, it’s a pain — capture it on first run. ([kopia.io](https://kopia.io/docs/repository-server/?utm_source=chatgpt.com "Repository Server"))
     
@@ -241,7 +242,7 @@ On a client machine (Windows with KopiaUI installed), you can use the GUI or CLI
 
 ---
 
-# M — Minimal checklist for you to act on right now
+## M — Minimal checklist for you to act on right now
 
 -  Pick the central PC and a repository disk (e.g., `D:\KopiaRepo`).
     
@@ -263,5 +264,91 @@ We can now:
 - Generate the exact **NSSM arguments** and a ready-to-paste script for installing Kopia as a Windows service under NSSM (I’ll include handling of config-file and logs), **or**
     
 - Produce a one-page **deployment checklist** and a small PowerShell script to pre-create the Kopia users and push a small client config (useful for mass roll-out).
-    
 
+---
+
+# Kopia Server Setup Actually Done 
+
+## 1. Creates the repository (filesystem)
+
+```bash
+kopia repository create filesystem --path "<path_to_repo>"
+```
+**NOTE:** *Kopia* will ask you to enter a `repository password` (required) note this password.
+
+## 2. First time running Kopia Server
+```bash
+kopia server start 
+--address=0.0.0.0:51515 
+--server-username=<username> 
+--server-password=<password> 
+--tls-generate-cert 
+--tls-cert-file "<path_to_cert_file>\server.cert" 
+--tls-key-file "<path_to_key_file>\server.key"
+```
+**NOTE:** 
+- *Kopia* will self generate a `tls-cert`. The secure server key and cert will stored into the designated file paths. 
+- On first run, the server will also output it's `Trusted server certificate fingerprint (SHA256)` which needs to be saved and stored carefully. This is only printed once and will be needed every time the client UI is connected to this server repo.
+## 3. Running Server for all other times
+```bash
+kopia server start 
+--address=0.0.0.0:51515 
+--server-username=<username> 
+--server-password=<password> 
+--tls-cert-file "<path_to_cert_file>\server.cert" 
+--tls-key-file "<path_to_key_file>\server.key"
+```
+- Just the `--tls-generate-cert` is removed cause it's already generated and specified using the file paths.
+- This is also the command specified in the [[NSSM]] service
+
+## 4. Converting the Server into a Windows Service (which is persistent) through [[NSSM]]
+```bash
+nssm install <kopia_server_service_name>
+```
+- Params used:
+	- path to kopia-server.exe
+	- path to kopia-server folder
+	- arguments: server start command (mentioned above)
+	- Set user profile login of user who is running Kopia server
+	- (Optional) Connected the Log file for server outputs
+- Once the service is created we run it and make it a auto start as follows:
+```bash
+nssm start <kopia_server_service_name>
+nssm set <kopia_server_service_name> Start SERVICE_AUTO_START
+```
+- Some other common commands used:
+```bash
+kopia server users list
+kpoia snapshot list --all
+```
+## 5. Adding users (client) creds to the server:
+```bash
+kopia server users add username@hostname_lowercase
+```
+- You will prompted to enter the password for the user
+- The client will have to use this password while connecting to the repo through the client UI.
+- **NOTE:** the username (who the client will be connecting as) cannot be changed so, make sure to enter the right `username@hostname_lowercase` 
+
+---
+
+# Kopia Policy Setup
+
+- We want to minimize the infra footprint of each backup
+- For this Kopia already comes with incremental backups (only changes data chunks are backup after the initial one), deduplication across clients and inbuilt compression algorithms.
+
+If we set these global policy on the server UI as admin, we will be defining the **repository-wide default policy**. Any client connecting to will inherit these settings unless they have their own specific policy.
+```bash
+kopia policy set 
+--global 
+--keep-latest 3 
+--keep-daily 0 
+--keep-weekly 0 
+--keep-monthly 0
+--keep-annual 0 
+--compression pgzip-best-compression
+--schedule-interval 24h
+```
+Explanation:
+- You would want to set the global policy itself so that all folder/file snapshots follow the same policy
+- Though UI seems the max interval can only be set to 12 hours
+- `PGZIP` gives the best compression-performance ratio out of all the compression algorithms.
