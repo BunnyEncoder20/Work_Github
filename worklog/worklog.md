@@ -26,3 +26,5 @@ password: postgres
 **[20/09/25 15:15] varun@Infra >>** Successfully installed [[Kopia]] Server CLI for centralized backups on LAN server (GPU) PC and created backup repo
 
 **[22/09/25 17:05] varun@Infra >>** configured [[Kopia]] Server Service on Server  and took backups 2 computers to centralized server. [[Kopia]] backups POC completed
+
+**[23/09/25 12:03] varun@Documentation >>** wrote down Kopia Server Setup and policy creation in detail into a markdown
