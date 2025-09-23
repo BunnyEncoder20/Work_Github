@@ -289,6 +289,7 @@ kopia server start
 **NOTE:** 
 - *Kopia* will self generate a `tls-cert`. The secure server key and cert will stored into the designated file paths. 
 - On first run, the server will also output it's `Trusted server certificate fingerprint (SHA256)` which needs to be saved and stored carefully. This is only printed once and will be needed every time the client UI is connected to this server repo.
+- Also note down the server username and password, this is used to sign into the server web UI as a admin
 ## 3. Running Server for all other times
 ```bash
 kopia server start 
@@ -320,6 +321,7 @@ nssm set <kopia_server_service_name> Start SERVICE_AUTO_START
 ```bash
 kopia server users list
 kpoia snapshot list --all
+kopia repository status
 ```
 ## 5. Adding users (client) creds to the server:
 ```bash

@@ -1,7 +1,7 @@
 # Technologies to Learn
 
-Your Fav [Piracy Website](https://fmhy.net/beginners-guide#movies-shows)
-Your [FOSS Website](https://alternativeoss.com/)
+That [Piracy Website](https://fmhy.net/beginners-guide#movies-shows)
+That [FOSS Website](https://alternativeoss.com/)
 ## Things to install in work PC
 1. HomeBrew package manager
 2. Zed Editor
