@@ -30,3 +30,5 @@ password: postgres
 **[23/09/25 12:03] varun@Documentation >>** wrote down Kopia Server Setup and policy creation in detail into a markdown.
 
 **[23/09/25 17:10] varun@Documentation >>** Completed creating SOP for Kopia Server Setup.
+
+**[24/09/25 17:10] varun@Documentation >>** Completed creating SOP for Kopia Client Setup.
