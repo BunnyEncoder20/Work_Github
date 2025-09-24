@@ -11,6 +11,14 @@ That [FOSS Website](https://alternativeoss.com/)
 6. Obsidian
 7. PopOS
 
+### Fonts I use:
+1. Cascadia Code
+2. Hurmit NF Mono
+3. Terminess NF Mono
+4. CQ Mono
+5. Victor Mono
+
+
 ## Development
 
 1. [[Nest.js]]
