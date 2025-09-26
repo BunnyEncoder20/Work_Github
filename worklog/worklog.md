@@ -17,7 +17,7 @@ username: postgres
 password: postgres
 ```
 
-**[19/09/25 14:30] varun@backend >>** IETM: Fixed indexing and English analyzer (tokenization algorithm) of `ietm` data 
+**[19/09/25 14:30] varun@backend >>** IETM: Fixed indexing and English analyzer (tokenization algorithm) of `ietm` data
 
 **[19/09/25 15:45] varun@backend >>** IETM: Implemented Elastic Search features: fuzzy, Boolean, phrase and keyword. Rewrote entire Elastic Searching controller
 
@@ -34,3 +34,5 @@ password: postgres
 **[24/09/25 10:30] varun@Documentation >>** Completed creating SOP for Kopia Client Setup.
 
 **[24/09/25  17:20] varun@Infra >>** Created Docker Image for running Kopia Server as a container.
+
+**[25/09/25 12:10] varun@Infra >>** Installed Linux (Pop!_OS) on work machine. Windows 11 not suitable for development work.
