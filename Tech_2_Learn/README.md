@@ -2,22 +2,6 @@
 
 That [Piracy Website](https://fmhy.net/beginners-guide#movies-shows)
 That [FOSS Website](https://alternativeoss.com/)
-## Things to install in work PC
-1. HomeBrew package manager
-2. Zed Editor
-3. Warp terminal
-4. [[Tmux]]
-5. [[Docker]]
-6. Obsidian
-7. PopOS
-
-### Fonts I use:
-1. Cascadia Code
-2. Hurmit NF Mono
-3. Terminess NF Mono
-4. CQ Mono
-5. Victor Mono
-
 
 ## Development
 
