@@ -12,11 +12,12 @@
 - **Future Ready**: Active roadmap including support for server components (for frontend-backend sharing), future plans for native WebAssembly, and AI-assisted tooling, demonstrating long-term viability.
 - **Active Community and Support**: Large, vibrant community ensures ongoing updates, extensions, and learning resources, reducing risks associated with framework stagnation.
 - **Design Patterns**: Encourages best practices such as object-oriented programming, dependency injection, and hexagonal architecture, improving long-term adaptability.
-- **Business Value**: Faster team onboarding (especially for Angular developers), reduced long-term technical debt, and easier scaling as project demands grow. 
+- **Business Value**: Faster team onboarding (especially for Angular developers), reduced long-term technical debt, and easier scaling as project demands grow.
+
 ## Conclusion:
 NestJS offers a blend of:
-- maintainable architecture, 
-- out-of-the-box best practices, 
-- and modern JavaScript/TypeScript capability, 
-- ideal for both startups looking to scale rapidly and mature companies refactoring legacy systems for the future. 
+- maintainable architecture,
+- out-of-the-box best practices,
+- and modern JavaScript/TypeScript capability,
+- ideal for both startups looking to scale rapidly and mature companies refactoring legacy systems for the future.
 - Its modularity and strong typing can reduce bugs, cut maintenance costs, and speed up development, ensuring reliability and efficiency from the ground up.
