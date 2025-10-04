@@ -44,3 +44,5 @@ password: postgres
 **[03/10/25 17:05] varun@DevOps >>** containerized IETM project (both back-end (+postgres +elasticsearch), front-end )
 
 **[04/10/25 10:00] varun@DevOps >>** created and debugged docker-entrypoint shell scripts. All docker-compose services working correctly now.
+
+**[04/10/25 16:13] varun@backend >>** built basic API structures in nest framework. Tested with postman REST API client
