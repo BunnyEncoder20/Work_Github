@@ -36,3 +36,11 @@ password: postgres
 **[24/09/25  17:20] varun@Infra >>** Created Docker Image for running Kopia Server as a container.
 
 **[25/09/25 12:10] varun@Infra >>** Installed Linux (Pop!_OS) on work machine. Windows 11 not suitable for development work.
+
+**[01/10/25 10:15] varun@Infra >>** Restored broken bootloader of PC and installed Omarchy Linux successfully.
+
+**[03/10/25 12:00] varun@Frontend >>** created ImageSideBar component for IETM project
+
+**[03/10/25 17:05] varun@DevOps >>** containerized IETM project (both back-end (+postgres +elasticsearch), front-end )
+
+**[04/10/25 10:00] varun@DevOps >>** created and debugged docker-entrypoint shell scripts. All docker-compose services working correctly now.
