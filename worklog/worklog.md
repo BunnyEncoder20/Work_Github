@@ -35,7 +35,7 @@ password: postgres
 
 **[24/09/25  17:20] varun@Infra >>** Created Docker Image for running Kopia Server as a container.
 
-**[25/09/25 12:10] varun@Infra >>** Installed Linux (Pop!_OS) on work machine. Windows 11 not suitable for development work.
+**[25/09/25 12:10] varun@Infra >>** Installed Linux (Pop!OS) on work machine. Windows 11 not suitable for development work.
 
 **[01/10/25 10:15] varun@Infra >>** Restored broken bootloader of PC and installed Omarchy Linux successfully.
 
@@ -43,6 +43,10 @@ password: postgres
 
 **[03/10/25 17:05] varun@DevOps >>** containerized IETM project (both back-end (+postgres +elasticsearch), front-end )
 
-**[04/10/25 10:00] varun@DevOps >>** created and debugged docker-entrypoint shell scripts. All docker-compose services working correctly now.
+**[04/10/25 10:00] varun@DevOps >>** created and debugged docker-entrypoint shell scripts for IETM Dockerization. All docker-compose services working correctly now.
 
 **[04/10/25 16:13] varun@backend >>** built basic API structures in nest framework. Tested with postman REST API client
+
+**[07/10/25 14:00] varun@Infra >>** deployed backup software kopia on 2 servers and 7 client machines at MD Dockyard office.
+
+**[08/10/25 16:30] varun@backend >>** containerized lms-backend including core stack components: Nestjs, PostgreSQL and redis.
