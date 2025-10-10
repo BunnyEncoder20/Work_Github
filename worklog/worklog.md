@@ -50,3 +50,5 @@ password: postgres
 **[07/10/25 14:00] varun@Infra >>** deployed backup software kopia on 2 servers and 7 client machines at MD Dockyard office.
 
 **[08/10/25 16:30] varun@backend >>** containerized lms-backend including core stack components: Nestjs, PostgreSQL and redis.
+
+**[09/10/25 17:15] varun@backend >>** Integrated PrismaORM into docker-compose setup. It was NOT easy. generating client and running migrations still pending on image.
